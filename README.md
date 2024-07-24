@@ -36,7 +36,7 @@
 - Implementar mecanismo para importação de contas a pagar via arquivo csv
   - Evidência homologada
   - Dentro do diretório resource/arquivoLote.csv pra poder incluir no endpoint em lote
-- Foi feito a autenticaçao por basic auth, tendo que passar usuario(beneficiary) e a senha(123);
+- Foi feito a autenticaçao por basic auth, tendo que passar usuario(account) e a senha(123);
 - Foi feito testes unitários, tendo a cobertura superior aos 80%
 - Foi incluido logs pra poder ter rastreabilidade, se caso der alguma falha, obtendo pelo dynatrace, grafana, ...
 - Foi feito com banco de dados PostgreSQL e Flyway;
