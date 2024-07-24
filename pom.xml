@@ -8,12 +8,12 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.3</version>
     </parent>
-    <artifactId>register-beneficiary</artifactId>
+    <artifactId>account</artifactId>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>br.com.register.beneficiary</groupId>
+    <groupId>br.com.account</groupId>
     <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>register-beneficiary</name>
+    <name>account</name>
 
     <properties>
         <annotation.version>0.0.2</annotation.version>
@@ -76,6 +76,16 @@
             <version>${mapstruct.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>9.20.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-inline</artifactId>
             <version>${mockito-inline.version}</version>
@@ -124,14 +134,14 @@
         </dependency>
 
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>2.0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.6.0</version> <!-- Verifique a versão mais recente -->
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -143,6 +153,15 @@
             <groupId>org.springframework.retry</groupId>
             <artifactId>spring-retry</artifactId>
             <version>2.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
 

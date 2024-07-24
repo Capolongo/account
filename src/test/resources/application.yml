@@ -7,7 +7,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    name: beneficiary
+    name: account
   config:
     import: "optional:configserver:https://fake-url.com?max-attempts=1"
 
@@ -24,7 +24,7 @@ spring:
 
 security:
   user:
-    name: beneficiary
+    name: account
     password: 123
     roles: USER
 

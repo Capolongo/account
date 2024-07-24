@@ -7,24 +7,19 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    name: beneficiary
+    name: account
   config:
     import: "optional:configserver:https://fake-url.com?max-attempts=1"
 
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password: password
-    driver-class-name: org.h2.Driver
-
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: myuser
+    password: mypassword
+    driver-class-name: org.postgresql.Driver
 
 security:
   user:
-    name: beneficiary
+    name: account
     password: 123
     roles: USER
 
@@ -54,3 +49,6 @@ logging:
           descriptor:
             sql:
               BasicBinder: TRACE
+
+server:
+  port: 8090

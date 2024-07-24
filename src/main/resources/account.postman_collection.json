@@ -1,0 +1,362 @@
+{
+	"info": {
+		"_postman_id": "96e1d6b5-2bfc-43b2-8eb6-d333450e3cf4",
+		"name": "account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2482087"
+	},
+	"item": [
+		{
+			"name": "create account",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "account",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiOTViMTMyNi03ZGEyLTQ0MmQtOTU4Ny00NjdjYjY0ZDg4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZXNzYWdpbmctY2xpZW50IiwiYXVkIjoibWVzc2FnaW5nLWNsaWVudCIsIm5iZiI6MTY3OTY1NzE5NSwic2NvcGUiOlsib3BlbmlkIiwibWVzc2FnZS5yZWFkIiwibWVzc2FnZS53cml0ZSJdLCJpc3MiOiJodHRwczpcL1wvYXV0aG9yaXphdGlvbi1zZXJ2ZXItZnFhMS5pbnRlcm5hbC50aW1icmFzaWwuY29tLmJyXC9hdXRob3JpemF0aW9uLXNlcnZlciIsImV4cCI6MTY3OTY1NzQ5NSwiaWF0IjoxNjc5NjU3MTk1fQ.ENVutjpeW-I--AkWPu5hiQkay1poAf_xmQg6VFm9u49h4xwr7MTlx42mBRC3NzYwYIIhPeWvRzOKO3PeTn5Cub0qvmtsl45TVomCrzMpwvhUgfq_9_vmb3TqLbfBlqQ6ht56kEXoTqPOPXd32WjPVXlxYrN9ChwAoD6vbzjHHIOjQNHrVJPvv6qB6oxjCv-CSFyPZwBbwZPKRUHk_ekSJyGtBnMdS3PFQUsrlGpvVcxNRHVhS1pw0L3vCUicW1DSTstO7uK3KMp0WP6WDh-YbkW7AhdrAxxoN6slzoaqTcz41zcY8m_2ucy5092ejnuimYa9MncQcDOegbq21ssQZw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\" : {\r\n        \"dueDate\": \"2024-11-03\",\r\n        \"paymentDate\": \"2024-11-03\",\r\n        \"value\": \"123\",\r\n        \"description\": \"123\",\r\n        \"situation\": \"Teste\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/v1/account",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"v1",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create batch accounts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "account",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiOTViMTMyNi03ZGEyLTQ0MmQtOTU4Ny00NjdjYjY0ZDg4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZXNzYWdpbmctY2xpZW50IiwiYXVkIjoibWVzc2FnaW5nLWNsaWVudCIsIm5iZiI6MTY3OTY1NzE5NSwic2NvcGUiOlsib3BlbmlkIiwibWVzc2FnZS5yZWFkIiwibWVzc2FnZS53cml0ZSJdLCJpc3MiOiJodHRwczpcL1wvYXV0aG9yaXphdGlvbi1zZXJ2ZXItZnFhMS5pbnRlcm5hbC50aW1icmFzaWwuY29tLmJyXC9hdXRob3JpemF0aW9uLXNlcnZlciIsImV4cCI6MTY3OTY1NzQ5NSwiaWF0IjoxNjc5NjU3MTk1fQ.ENVutjpeW-I--AkWPu5hiQkay1poAf_xmQg6VFm9u49h4xwr7MTlx42mBRC3NzYwYIIhPeWvRzOKO3PeTn5Cub0qvmtsl45TVomCrzMpwvhUgfq_9_vmb3TqLbfBlqQ6ht56kEXoTqPOPXd32WjPVXlxYrN9ChwAoD6vbzjHHIOjQNHrVJPvv6qB6oxjCv-CSFyPZwBbwZPKRUHk_ekSJyGtBnMdS3PFQUsrlGpvVcxNRHVhS1pw0L3vCUicW1DSTstO7uK3KMp0WP6WDh-YbkW7AhdrAxxoN6slzoaqTcz41zcY8m_2ucy5092ejnuimYa9MncQcDOegbq21ssQZw"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1ef492e2-39d0-4130-b112-606d84b9294a"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/v1/account/batch-accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"v1",
+						"account",
+						"batch-accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update account",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "account",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiOTViMTMyNi03ZGEyLTQ0MmQtOTU4Ny00NjdjYjY0ZDg4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZXNzYWdpbmctY2xpZW50IiwiYXVkIjoibWVzc2FnaW5nLWNsaWVudCIsIm5iZiI6MTY3OTY1NzE5NSwic2NvcGUiOlsib3BlbmlkIiwibWVzc2FnZS5yZWFkIiwibWVzc2FnZS53cml0ZSJdLCJpc3MiOiJodHRwczpcL1wvYXV0aG9yaXphdGlvbi1zZXJ2ZXItZnFhMS5pbnRlcm5hbC50aW1icmFzaWwuY29tLmJyXC9hdXRob3JpemF0aW9uLXNlcnZlciIsImV4cCI6MTY3OTY1NzQ5NSwiaWF0IjoxNjc5NjU3MTk1fQ.ENVutjpeW-I--AkWPu5hiQkay1poAf_xmQg6VFm9u49h4xwr7MTlx42mBRC3NzYwYIIhPeWvRzOKO3PeTn5Cub0qvmtsl45TVomCrzMpwvhUgfq_9_vmb3TqLbfBlqQ6ht56kEXoTqPOPXd32WjPVXlxYrN9ChwAoD6vbzjHHIOjQNHrVJPvv6qB6oxjCv-CSFyPZwBbwZPKRUHk_ekSJyGtBnMdS3PFQUsrlGpvVcxNRHVhS1pw0L3vCUicW1DSTstO7uK3KMp0WP6WDh-YbkW7AhdrAxxoN6slzoaqTcz41zcY8m_2ucy5092ejnuimYa9MncQcDOegbq21ssQZw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"account\" : {\r\n        \"dueDate\": \"2024-11-03\",\r\n        \"paymentDate\": \"2024-11-03\",\r\n        \"value\": \"123\",\r\n        \"description\": \"123\",\r\n        \"situation\": \"123\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/v1/account/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"v1",
+						"account",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update situation account",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "account",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiOTViMTMyNi03ZGEyLTQ0MmQtOTU4Ny00NjdjYjY0ZDg4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZXNzYWdpbmctY2xpZW50IiwiYXVkIjoibWVzc2FnaW5nLWNsaWVudCIsIm5iZiI6MTY3OTY1NzE5NSwic2NvcGUiOlsib3BlbmlkIiwibWVzc2FnZS5yZWFkIiwibWVzc2FnZS53cml0ZSJdLCJpc3MiOiJodHRwczpcL1wvYXV0aG9yaXphdGlvbi1zZXJ2ZXItZnFhMS5pbnRlcm5hbC50aW1icmFzaWwuY29tLmJyXC9hdXRob3JpemF0aW9uLXNlcnZlciIsImV4cCI6MTY3OTY1NzQ5NSwiaWF0IjoxNjc5NjU3MTk1fQ.ENVutjpeW-I--AkWPu5hiQkay1poAf_xmQg6VFm9u49h4xwr7MTlx42mBRC3NzYwYIIhPeWvRzOKO3PeTn5Cub0qvmtsl45TVomCrzMpwvhUgfq_9_vmb3TqLbfBlqQ6ht56kEXoTqPOPXd32WjPVXlxYrN9ChwAoD6vbzjHHIOjQNHrVJPvv6qB6oxjCv-CSFyPZwBbwZPKRUHk_ekSJyGtBnMdS3PFQUsrlGpvVcxNRHVhS1pw0L3vCUicW1DSTstO7uK3KMp0WP6WDh-YbkW7AhdrAxxoN6slzoaqTcz41zcY8m_2ucy5092ejnuimYa9MncQcDOegbq21ssQZw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"situation\": \"teste3\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/v1/account/update/situation/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"v1",
+						"account",
+						"update",
+						"situation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "account",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiOTViMTMyNi03ZGEyLTQ0MmQtOTU4Ny00NjdjYjY0ZDg4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZXNzYWdpbmctY2xpZW50IiwiYXVkIjoibWVzc2FnaW5nLWNsaWVudCIsIm5iZiI6MTY3OTY1NzE5NSwic2NvcGUiOlsib3BlbmlkIiwibWVzc2FnZS5yZWFkIiwibWVzc2FnZS53cml0ZSJdLCJpc3MiOiJodHRwczpcL1wvYXV0aG9yaXphdGlvbi1zZXJ2ZXItZnFhMS5pbnRlcm5hbC50aW1icmFzaWwuY29tLmJyXC9hdXRob3JpemF0aW9uLXNlcnZlciIsImV4cCI6MTY3OTY1NzQ5NSwiaWF0IjoxNjc5NjU3MTk1fQ.ENVutjpeW-I--AkWPu5hiQkay1poAf_xmQg6VFm9u49h4xwr7MTlx42mBRC3NzYwYIIhPeWvRzOKO3PeTn5Cub0qvmtsl45TVomCrzMpwvhUgfq_9_vmb3TqLbfBlqQ6ht56kEXoTqPOPXd32WjPVXlxYrN9ChwAoD6vbzjHHIOjQNHrVJPvv6qB6oxjCv-CSFyPZwBbwZPKRUHk_ekSJyGtBnMdS3PFQUsrlGpvVcxNRHVhS1pw0L3vCUicW1DSTstO7uK3KMp0WP6WDh-YbkW7AhdrAxxoN6slzoaqTcz41zcY8m_2ucy5092ejnuimYa9MncQcDOegbq21ssQZw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"subscriptionDate\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/v1/account/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"v1",
+						"account",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "account",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiOTViMTMyNi03ZGEyLTQ0MmQtOTU4Ny00NjdjYjY0ZDg4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZXNzYWdpbmctY2xpZW50IiwiYXVkIjoibWVzc2FnaW5nLWNsaWVudCIsIm5iZiI6MTY3OTY1NzE5NSwic2NvcGUiOlsib3BlbmlkIiwibWVzc2FnZS5yZWFkIiwibWVzc2FnZS53cml0ZSJdLCJpc3MiOiJodHRwczpcL1wvYXV0aG9yaXphdGlvbi1zZXJ2ZXItZnFhMS5pbnRlcm5hbC50aW1icmFzaWwuY29tLmJyXC9hdXRob3JpemF0aW9uLXNlcnZlciIsImV4cCI6MTY3OTY1NzQ5NSwiaWF0IjoxNjc5NjU3MTk1fQ.ENVutjpeW-I--AkWPu5hiQkay1poAf_xmQg6VFm9u49h4xwr7MTlx42mBRC3NzYwYIIhPeWvRzOKO3PeTn5Cub0qvmtsl45TVomCrzMpwvhUgfq_9_vmb3TqLbfBlqQ6ht56kEXoTqPOPXd32WjPVXlxYrN9ChwAoD6vbzjHHIOjQNHrVJPvv6qB6oxjCv-CSFyPZwBbwZPKRUHk_ekSJyGtBnMdS3PFQUsrlGpvVcxNRHVhS1pw0L3vCUicW1DSTstO7uK3KMp0WP6WDh-YbkW7AhdrAxxoN6slzoaqTcz41zcY8m_2ucy5092ejnuimYa9MncQcDOegbq21ssQZw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"subscriptionDate\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/v1/account/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"v1",
+						"account",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts-pay",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "account",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJiOTViMTMyNi03ZGEyLTQ0MmQtOTU4Ny00NjdjYjY0ZDg4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJtZXNzYWdpbmctY2xpZW50IiwiYXVkIjoibWVzc2FnaW5nLWNsaWVudCIsIm5iZiI6MTY3OTY1NzE5NSwic2NvcGUiOlsib3BlbmlkIiwibWVzc2FnZS5yZWFkIiwibWVzc2FnZS53cml0ZSJdLCJpc3MiOiJodHRwczpcL1wvYXV0aG9yaXphdGlvbi1zZXJ2ZXItZnFhMS5pbnRlcm5hbC50aW1icmFzaWwuY29tLmJyXC9hdXRob3JpemF0aW9uLXNlcnZlciIsImV4cCI6MTY3OTY1NzQ5NSwiaWF0IjoxNjc5NjU3MTk1fQ.ENVutjpeW-I--AkWPu5hiQkay1poAf_xmQg6VFm9u49h4xwr7MTlx42mBRC3NzYwYIIhPeWvRzOKO3PeTn5Cub0qvmtsl45TVomCrzMpwvhUgfq_9_vmb3TqLbfBlqQ6ht56kEXoTqPOPXd32WjPVXlxYrN9ChwAoD6vbzjHHIOjQNHrVJPvv6qB6oxjCv-CSFyPZwBbwZPKRUHk_ekSJyGtBnMdS3PFQUsrlGpvVcxNRHVhS1pw0L3vCUicW1DSTstO7uK3KMp0WP6WDh-YbkW7AhdrAxxoN6slzoaqTcz41zcY8m_2ucy5092ejnuimYa9MncQcDOegbq21ssQZw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"subscriptionDate\": \"\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/v1/account/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"v1",
+						"account",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
